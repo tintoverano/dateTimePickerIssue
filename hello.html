@@ -1,0 +1,18 @@
+<head>
+  <title></title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {{> quickForm id="job" schema="Schemas.myJobs" type="insert" validation="keyup"}}
+            </div>
+        </div>
+    </div   >
+</template>
